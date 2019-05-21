@@ -1,0 +1,10 @@
+[package]
+name = "bagworm"
+version = "0.1.0"
+authors = ["hnd <>"]
+edition = "2018"
+
+[dependencies]
+clipboard = "*"
+rlua = "*"
+failure = "*"
