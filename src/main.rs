@@ -26,7 +26,6 @@ fn main() -> Result<(), Error> {
                 match execute(&lua, clipboard_text) {
                     Ok(s) => {
                         println!("{} => {}", clipboard_text, s);
-                        let s = format!("{}\0", s);
                         if clipboard_ctx.set_contents(s.clone()).is_ok() {
                             prev_clipboard = s;
                         }
